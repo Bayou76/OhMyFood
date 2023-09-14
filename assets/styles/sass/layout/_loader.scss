@@ -14,8 +14,8 @@
   background-color: $blue;
   animation: loader 3s forwards;
   -webkit-animation: loader 3s forwards;
-  h1
-{
+  
+  h1 {
     font-size: 50px;
     font-family: $fontLogo;
     background: linear-gradient($primary, $secondary);
@@ -23,7 +23,7 @@
     -webkit-text-fill-color: transparent;
     animation: loader 3s forwards;
     -webkit-animation: loader 3s forwards;
-}
+  }
 
   @keyframes loader {
     0% {
@@ -35,19 +35,19 @@
     }
   }
 
-  .container_loader {
+  &_container {
     width: 64px;
     height: 64px;
     border-radius: 50%;
     border: 10px solid;
     border-color: $primary $greenFont $secondary $blue2;
-    animation: spinner 1s linear  infinite ;
-    -webkit-animation: spinner 1s linear  forwards ;
+    animation: spinner 1s linear infinite;
+    -webkit-animation: spinner 1s linear forwards;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-}
+  }
 
   @keyframes spinner {
     0% {
@@ -60,5 +60,4 @@
       display: none;
     }
   }
-  
 }

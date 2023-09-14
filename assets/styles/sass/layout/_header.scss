@@ -1,0 +1,34 @@
+@import "../abstracts/colors";
+@import "../base/typography";
+
+.header {
+  &_logo {
+    padding: 15px 0 8px 0;
+    box-shadow: 0 0 16px 0 #0000002e;
+    text-align: center;
+    &_img {
+      justify-content: center;
+    }
+  }
+
+  &_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+    &_icon{
+        margin-right: 15px;
+        color: #353535;
+    }
+    &_text{
+        p{
+            border: none;
+            background-color: #eaeaea;
+            font-size: larger;
+            font-weight: 900;
+            text-align: center;
+            color: #353535;
+        }
+    }
+  }
+}
