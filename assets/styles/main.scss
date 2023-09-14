@@ -1,8 +1,13 @@
 // BASE
 
     @import "./sass/base/_base";
+    @import "./sass/base/typography";
 
 // LAYOUT
+
+    @import "./sass/layout/loader";
+    @import "./sass/layout/header";
+    @import "./sass/layout/footer";
 
 // ABSTRACT
 
@@ -11,6 +16,8 @@
 // COMPONENTS
 
 // PAGES
+
+    @import "./sass/pages/homepage.scss";
 
 // THEMES
 
