@@ -5,6 +5,8 @@
     background-color: #353535;
     color: white;
     padding: 5px 25px;
+    display: flex;
+    flex-direction: column;
     &_logo {
       font-family: $fontLogo;
     }
@@ -14,6 +16,9 @@
     &_text i{
         margin-right: 25px;
         width: 11px;
+    }
+    a{
+      margin-bottom: 10px;
     }
   }
 }

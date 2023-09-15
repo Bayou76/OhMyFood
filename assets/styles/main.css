@@ -88,6 +88,7 @@ body img {
 }
 .header_logo_img {
   justify-content: center;
+  width: 200px;
 }
 .header_content {
   display: flex;
@@ -113,6 +114,8 @@ body img {
     background-color: #353535;
     color: white;
     padding: 5px 25px;
+    display: flex;
+    flex-direction: column;
   }
   .footer_logo {
     font-family: "Shrikhand", cursive;
@@ -123,5 +126,42 @@ body img {
   .footer_text i {
     margin-right: 25px;
     width: 11px;
+  }
+  .footer a {
+    margin-bottom: 10px;
+  }
+}
+.info_btn {
+  text-decoration: none;
+  background: linear-gradient(180deg, #ff79da, #9356dc);
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 13px 18px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.info_btn:hover {
+  background: linear-gradient(90deg, #ff79da, #9356dc);
+  opacity: 0.85;
+}
+
+@media (max-width: 767px) {
+  .info {
+    margin: 40px 0;
+    text-align: center;
+  }
+  .info_title {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .info_text {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 37px;
   }
 }/*# sourceMappingURL=main.css.map */
