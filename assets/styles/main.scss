@@ -17,8 +17,12 @@
 
 // PAGES
 
-    @import "./sass/pages/homepage.scss";
+   //Page d'Accueil
+    @import "./sass/pages/homePage/homepage_mobile";
+    @import "./sass/pages/homePage/homepage_tablette";
+    @import "./sass/pages/homePage/homepage_desktop";
 
+    
 // THEMES
 
 // VENDORS

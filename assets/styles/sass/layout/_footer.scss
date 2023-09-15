@@ -1,0 +1,19 @@
+@import "../base/typography";
+
+@media (max-width: 767px) {
+  .footer {
+    background-color: #353535;
+    color: white;
+    padding: 5px 25px;
+    &_logo {
+      font-family: $fontLogo;
+    }
+    &_text{
+        margin-bottom: 7px;
+    }
+    &_text i{
+        margin-right: 25px;
+        width: 11px;
+    }
+  }
+}

@@ -1,8 +1,18 @@
 @import "../abstracts/colors";
 @import "./typography";
 
-body{
+
+body {
+    padding: 0;
     margin: 0;
     background-color: $white;
     font-family: $fontText;
+
+    .main-container{
+        margin: 0 15px;
+    }
+
+    img{
+        width: 350px;
+    }
 }

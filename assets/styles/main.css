@@ -1,7 +1,27 @@
 body {
+  padding: 0;
   margin: 0;
   background-color: #fff;
   font-family: "Roboto", sans-serif;
+}
+body .main-container {
+  margin: 0 15px;
+}
+body img {
+  width: 350px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+body .main-container {
+  margin: 0 15px;
+}
+body img {
+  width: 350px;
 }
 
 .loader {
@@ -86,4 +106,22 @@ body {
   font-weight: 900;
   text-align: center;
   color: #353535;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    background-color: #353535;
+    color: white;
+    padding: 5px 25px;
+  }
+  .footer_logo {
+    font-family: "Shrikhand", cursive;
+  }
+  .footer_text {
+    margin-bottom: 7px;
+  }
+  .footer_text i {
+    margin-right: 25px;
+    width: 11px;
+  }
 }/*# sourceMappingURL=main.css.map */
