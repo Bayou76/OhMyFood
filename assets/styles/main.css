@@ -144,6 +144,12 @@ body .main-container {
   opacity: 0.85;
 }
 
+.restaurants_card_content i {
+  font-size: 25px;
+  margin-right: 35px;
+  cursor: pointer;
+}
+
 @media (max-width: 767px) {
   .info {
     margin: 40px 0;
@@ -253,9 +259,5 @@ body .main-container {
   }
   .restaurants_card_content_subtitle {
     margin-top: 5px;
-  }
-  .restaurants_card_content .fa-heart {
-    font-size: 25px;
-    margin-right: 35px;
   }
 }/*# sourceMappingURL=main.css.map */
