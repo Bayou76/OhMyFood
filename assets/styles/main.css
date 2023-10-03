@@ -7,6 +7,10 @@ body {
 body .main-container {
   margin: 0 15px;
 }
+body a {
+  text-decoration: none;
+  color: black;
+}
 
 body {
   padding: 0;
@@ -16,6 +20,10 @@ body {
 }
 body .main-container {
   margin: 0 15px;
+}
+body a {
+  text-decoration: none;
+  color: black;
 }
 
 .loader {
@@ -123,10 +131,28 @@ body .main-container {
   }
   .footer a {
     margin-bottom: 10px;
+    color: #fff;
   }
 }
-.info_btn {
-  text-decoration: none;
+.header_menu_logo {
+  display: grid;
+  grid-template-columns: 10% 85%;
+  align-items: center;
+  padding: 15px 0 8px 0;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1803921569);
+  text-align: center;
+}
+.header_menu_logo_img {
+  margin-left: 42px;
+  justify-content: center;
+  width: 200px;
+}
+.header_menu_logo i {
+  font-size: 24px;
+  margin-left: 17px;
+}
+
+.btn {
   background: linear-gradient(180deg, #ff79da, #9356dc);
   color: white;
   font-size: 20px;
@@ -139,15 +165,58 @@ body .main-container {
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
 }
-.info_btn:hover {
+.btn:hover {
   background: linear-gradient(90deg, #ff79da, #9356dc);
   opacity: 0.85;
 }
 
-.restaurants_card_content i {
+@keyframes full-heart {
+  0% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 0.6;
+  }
+  40% {
+    opacity: 0.7;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.restaurants_card_content .heart-icon {
   font-size: 25px;
   margin-right: 35px;
   cursor: pointer;
+  position: relative;
+}
+.restaurants_card_content .heart-icon .full,
+.restaurants_card_content .heart-icon .empty {
+  position: absolute;
+}
+.restaurants_card_content .heart-icon .full {
+  display: none;
+  background-image: linear-gradient(40deg, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: full-heart 400ms ease-in-out;
+  -webkit-animation: full-heart 400ms ease-in-out;
+}
+.restaurants_card_content .heart-icon:hover .full {
+  display: block;
+}
+.restaurants_card_content .heart-icon:hover .empty {
+  display: none;
+}
+.restaurants_card_content .heart-icon .empty {
+  color: black;
 }
 
 @media (max-width: 767px) {
@@ -259,5 +328,35 @@ body .main-container {
   }
   .restaurants_card_content_subtitle {
     margin-top: 5px;
+  }
+}
+.commande {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto 40px auto;
+}
+
+.retaurant_header_img {
+  width: 100%;
+}
+
+@keyframes full-heart {
+  0% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 0.6;
+  }
+  40% {
+    opacity: 0.7;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
   }
 }/*# sourceMappingURL=main.css.map */
