@@ -11,26 +11,28 @@
   .heart-icon .full,
   .heart-icon .empty {
     position: absolute;
+    transition: transform 1.9s ease-in-out, opacity 2s ease-in-out;
+    
   }
   
   .heart-icon .full {
-    display: none;
-    background-image: linear-gradient(40deg, $secondary, $primary);
+    background-image: linear-gradient(35deg, $secondary, $primary);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: full-heart 400ms ease-in-out ;
-    -webkit-animation: full-heart 400ms ease-in-out ;
+    transform: scaleX(0);
+    opacity: 0;
   }
   
   .heart-icon:hover .full {
-    display: block;
-  }
-  
-  .heart-icon:hover .empty {
-    display: none;
+    transform: scaleX(1);
+    opacity: 1;
   }
   
   .heart-icon .empty {
     color: black;
+  }
+
+  .heart-icon:hover .empty {
+    opacity: 0;
   }
 }
