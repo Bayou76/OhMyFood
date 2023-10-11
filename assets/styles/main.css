@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   padding: 0;
   margin: 0;
@@ -220,6 +221,60 @@ body a {
   opacity: 0;
 }
 
+.menu_entrees > .menu_entrees_cards,
+.menu_plats > .menu_plats_cards,
+.menu_desserts > .menu_desserts_cards {
+  display: none;
+}
+
+/* Les Entrées  */
+.menu_entrees > .menu_entrees_cards:nth-child(2) {
+  display: block;
+  animation: fadeIn 2s ease-in-out 0.5s forwards;
+}
+
+.menu_entrees > .menu_entrees_cards:nth-child(3) {
+  display: block;
+  animation: fadeIn 3s ease-in-out 0.5s forwards;
+}
+
+.menu_entrees > .menu_entrees_cards:nth-child(4) {
+  display: block;
+  animation: fadeIn 4s ease-in-out 0.5s forwards;
+}
+
+/* Les plats  */
+.menu_plats > .menu_plats_cards:nth-child(2) {
+  display: block;
+  animation: fadeIn 6s ease-in-out 0.5s forwards;
+}
+
+.menu_plats > .menu_plats_cards:nth-child(3) {
+  display: block;
+  animation: fadeIn 7s ease-in-out 0.5s forwards;
+}
+
+.menu_plats > .menu_plats_cards:nth-child(4) {
+  display: block;
+  animation: fadeIn 8s ease-in-out 0.5s forwards;
+}
+
+/* Les Desserts  */
+.menu_desserts > .menu_desserts_cards:nth-child(2) {
+  display: block;
+  animation: fadeIn 10s ease-in-out 0.5s forwards;
+}
+
+.menu_desserts > .menu_desserts_cards:nth-child(3) {
+  display: block;
+  animation: fadeIn 11s ease-in-out 0.5s forwards;
+}
+
+.menu_desserts > .menu_desserts_cards:nth-child(4) {
+  display: block;
+  animation: fadeIn 12s ease-in-out 0.5s forwards;
+}
+
 @media (max-width: 767px) {
   .info {
     margin: 40px 0;
@@ -397,5 +452,15 @@ body a {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }/*# sourceMappingURL=main.css.map */

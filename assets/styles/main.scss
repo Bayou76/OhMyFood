@@ -18,6 +18,7 @@
 
     @import "./sass/components/button";
     @import "./sass/components/heart";
+    @import "./sass/components/fade";
 
 // PAGES
 
@@ -34,6 +35,6 @@
 // ANIMATIONS 
 
     @import "./sass/animations/heart-anim";
-    @import "./sass/animations/fadeInUp";
+    @import "./sass/animations/fade-anim";
 
 // VENDORS
