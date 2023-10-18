@@ -25,7 +25,7 @@
         p{
             border: none;
             background-color: #eaeaea;
-            font-size: larger;
+            font-size: 22px;
             font-weight: 900;
             text-align: center;
             color: #353535;
@@ -33,4 +33,24 @@
     }
   }
 }
+
+    // head,info
+    .info {
+      padding: 40px;
+      text-align: center;
+      background-color: $background;
+      &_title {
+        margin-top: 0;
+        font-size: 24px;
+        font-weight: bolder;
+      }
+      &_text {
+        font-size: 15px;
+        font-weight: 300;
+        margin-bottom: 37px;
+      }
+      a{
+        font-size: 15px;
+      }
+    }
 

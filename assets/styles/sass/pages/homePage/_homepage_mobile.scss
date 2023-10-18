@@ -1,26 +1,13 @@
 @import "../../abstracts/colors";
 @import "../../base/typography";
 
-@media (max-width: 767px) {
-  // head,info
-  .info {
-    margin: 40px 0;
-    text-align: center;
-    &_title {
-      font-size: 30px;
-      font-weight: bolder;
-    }
-    &_text {
-      font-size: 18px;
-      font-weight: 300;
-      margin-bottom: 37px;
-    }
-  }
-
+@media screen and (max-width: 767px) {
   // ETAPE FONCTIONNEMENT
 
   .step {
-    margin-top: 25%;
+    width: 90%;
+    margin: auto;
+    padding: 0 15px;
     &_title {
       font-weight: 900;
       font-size: 25px;
@@ -45,7 +32,7 @@
         padding: 2px 25px;
         font-weight: bold;
         gap: 10px;
-        font-size: medium;
+        font-size: small;
         border-radius: 20px;
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
       }
@@ -62,11 +49,19 @@
 
   // RESTAURANTS
 
+  .restaurants {
+    background-color: $background;
+    &_title {
+      padding: 15px 25px 0 25px;
+    }
+  }
+
   .restaurants_card {
+    width: 90%;
+    margin: auto auto 25px auto;
     position: relative;
     z-index: 1;
     height: auto;
-    margin-bottom: 25px;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -88,7 +83,7 @@
     &_img_text {
       position: absolute;
       top: 10px;
-      right: 12px;
+      right: 15px;
       z-index: 2;
       background-color: $tertiary;
       color: $greenFont;
@@ -107,7 +102,7 @@
       justify-content: space-between;
       align-items: center;
       &_text {
-        padding: 5px 15px;
+        padding: 5px 5px;
       }
       &_title {
         font-size: 18px;

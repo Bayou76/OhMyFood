@@ -5,21 +5,58 @@
     background-color: #353535;
     color: white;
     padding: 5px 25px;
-    display: flex;
-    flex-direction: column;
     &_logo {
       font-family: $fontLogo;
+      font-size: medium;
     }
-    &_text{
+
+    &_info {
+      display: flex;
+      flex-direction: column;
+
+      &_text {
         margin-bottom: 7px;
-    }
-    &_text i{
+      }
+      &_text i {
         margin-right: 25px;
         width: 11px;
+      }
+      a {
+        margin-bottom: 10px;
+        color: $white;
+      }
     }
-    a{
-      margin-bottom: 10px;
-      color: $white;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    background-color: #353535;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+
+    &_logo {
+      font-family: $fontLogo;
+      font-size: large;
+      padding: 5px 30px;
+    }
+    &_info {
+      display: flex;
+      gap: 15px;
+      font-size: small;
+      &_text i {
+        margin-right: 10px;
+        width: 11px;
+      }
+      a {
+        color: $white;
+        &:nth-child(2){
+          margin-right: 35px;
+        }
+      }
     }
   }
 }
