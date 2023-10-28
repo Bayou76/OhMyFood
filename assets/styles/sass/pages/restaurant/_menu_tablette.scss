@@ -4,9 +4,20 @@
     height: 380px;
   }
 
+  .title{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    .heart-icon{
+        display: flex;
+        align-items: center;
+    }
+  }
+
   .menu {
     position: relative;
-    width: 90%;
+    width: 80%;
     margin: -50px auto 0 auto;
     z-index: 1;
     background-color: $background;
@@ -73,7 +84,7 @@
           display: flex;
           align-items: flex-end;
           // font-size: small;
-          width: 10%;
+          width: 2%;
           padding: 10px;
           font-weight: 900;
           p {
@@ -104,6 +115,7 @@
         &:hover &_check {
           opacity: 1;
           margin-right: 0;
+          margin-left: 15px;
         }
       }
     }

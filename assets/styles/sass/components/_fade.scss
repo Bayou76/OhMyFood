@@ -1,27 +1,24 @@
 .menu_entrees > .menu_entrees_cards,
 .menu_plats > .menu_plats_cards,
 .menu_desserts > .menu_desserts_cards {
-  display: none;
+  opacity: 0;
 }
 
 /* Les Entrées  */
 
 .menu_entrees > .menu_entrees_cards{
-  display: block;
   animation: fadeIn 1s ease-in-out 0.5s forwards;
 }
 
 /* Les plats  */
 
 .menu_plats > .menu_plats_cards{
-  display: block;
   animation: fadeIn 2s ease-in-out 0.5s forwards;
 }
 
 /* Les Desserts  */
 
 .menu_desserts > .menu_desserts_cards{
-  display: block;
   animation: fadeIn 3s ease-in-out 0.5s forwards;
 }
 

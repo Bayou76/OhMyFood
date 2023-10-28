@@ -237,18 +237,20 @@ body a {
     opacity: 1;
   }
 }
-.restaurants_card_content .heart-icon {
+.heart-icon {
   font-size: 25px;
   margin-right: 35px;
   cursor: pointer;
   position: relative;
 }
-.restaurants_card_content .heart-icon .full,
-.restaurants_card_content .heart-icon .empty {
+
+.heart-icon .full,
+.heart-icon .empty {
   position: absolute;
   transition: transform 1.9s ease-in-out, opacity 2s ease-in-out;
 }
-.restaurants_card_content .heart-icon .full {
+
+.heart-icon .full {
   background-image: linear-gradient(35deg, #ff79da, #9356dc);
   -webkit-background-clip: text;
           background-clip: text;
@@ -256,38 +258,38 @@ body a {
   transform: scaleX(0);
   opacity: 0;
 }
-.restaurants_card_content .heart-icon:hover .full {
+
+.heart-icon:hover .full {
   transform: scaleX(1);
   opacity: 1;
 }
-.restaurants_card_content .heart-icon .empty {
+
+.heart-icon .empty {
   color: black;
 }
-.restaurants_card_content .heart-icon:hover .empty {
+
+.heart-icon:hover .empty {
   opacity: 0;
 }
 
 .menu_entrees > .menu_entrees_cards,
 .menu_plats > .menu_plats_cards,
 .menu_desserts > .menu_desserts_cards {
-  display: none;
+  opacity: 0;
 }
 
 /* Les Entrées  */
 .menu_entrees > .menu_entrees_cards {
-  display: block;
   animation: fadeIn 1s ease-in-out 0.5s forwards;
 }
 
 /* Les plats  */
 .menu_plats > .menu_plats_cards {
-  display: block;
   animation: fadeIn 2s ease-in-out 0.5s forwards;
 }
 
 /* Les Desserts  */
 .menu_desserts > .menu_desserts_cards {
-  display: block;
   animation: fadeIn 3s ease-in-out 0.5s forwards;
 }
 
@@ -400,15 +402,17 @@ body a {
 }
 @media screen and (min-width: 767.1px) and (max-width: 1024px) {
   .step {
-    padding: 0 15px;
+    width: 90%;
+    margin: auto;
+    padding: 0 55px;
   }
   .step_title {
     font-weight: 900;
     font-size: 25px;
+    margin-left: 15px;
   }
   .step_container {
     display: flex;
-    justify-content: center;
   }
   .step .step_card {
     display: flex;
@@ -512,6 +516,128 @@ body a {
     margin-top: 5px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .step {
+    padding: 50px 180px;
+  }
+  .step_title {
+    font-weight: 900;
+    font-size: 25px;
+    margin-left: 15px;
+  }
+  .step_container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .step .step_card {
+    display: flex;
+    margin: 15px;
+    font-size: large;
+  }
+  .step .step_card_number {
+    background-color: #9356dc;
+    width: 15px;
+    padding: 10px;
+    text-align: center;
+    -webkit-clip-path: circle(40%);
+            clip-path: circle(40%);
+    color: #fff;
+  }
+  .step .step_card_content {
+    display: flex;
+    justify-content: center;
+    margin-left: -15px;
+    align-items: center;
+    padding: 2px 20px;
+    font-weight: bold;
+    font-size: smaller;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    width: 322px;
+  }
+  .step .step_card_content i {
+    margin-right: 15px;
+    color: #7e7e7e;
+    font-size: 20px;
+  }
+  .step .step_card_content .iconPurple {
+    color: #9356dc;
+  }
+  .restaurants {
+    padding: 50px 180px;
+    background-color: #F6F6F6;
+  }
+  .restaurants_title {
+    font-weight: 900;
+    font-size: 25px;
+    margin-left: 15px;
+  }
+  .restaurants_title {
+    font-weight: 900;
+    font-size: 25px;
+  }
+  .restaurants_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .restaurants_card {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    margin: 50px 15px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  }
+  .restaurants_card_img img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 331px;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
+  }
+  .restaurants_card_img_text {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    z-index: 2;
+    background-color: #99e2d0;
+    color: #008766;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 7px 9px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+  .restaurants_card_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .restaurants_card_content_text {
+    padding: 5px 15px;
+  }
+  .restaurants_card_content_title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+  .restaurants_card_content_subtitle {
+    margin-top: 5px;
+  }
+}
 .commande {
   display: flex;
   justify-content: center;
@@ -522,97 +648,126 @@ body a {
   width: 100%;
 }
 
-.menu {
-  position: relative;
-  z-index: 1;
-  margin-top: -50px;
-  background-color: #fff;
-  border-radius: 15px;
-  padding: 5px 10px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+@media screen and (max-width: 767.1px) {
+  .title {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  .title .heart-icon {
+    display: flex;
+    align-items: center;
+  }
+  .menu {
+    position: relative;
+    z-index: 1;
+    margin-top: -50px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 5px 10px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+  .menu_title {
+    font-family: "Shrikhand", cursive;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 28px;
+  }
+  .menu_entrees h2, .menu_plats h2, .menu_desserts h2 {
+    width: 40px;
+    border-bottom: 3px solid #99e2d0;
+  }
+  .menu_entrees_cards, .menu_plats_cards, .menu_desserts_cards {
+    display: flex;
+    border-radius: 15px;
+    margin-bottom: 12px;
+    background-color: #fff;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  }
+  .menu_entrees_cards_content, .menu_plats_cards_content, .menu_desserts_cards_content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .menu_entrees_cards_content_info, .menu_plats_cards_content_info, .menu_desserts_cards_content_info {
+    white-space: nowrap;
+    width: 100%;
+    padding: 10px;
+  }
+  .menu_entrees_cards_content_info h3, .menu_plats_cards_content_info h3, .menu_desserts_cards_content_info h3 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .menu_entrees_cards_content_info p, .menu_plats_cards_content_info p, .menu_desserts_cards_content_info p {
+    margin: 0;
+    font-size: 15px;
+  }
+  .menu_entrees_cards_content_price, .menu_plats_cards_content_price, .menu_desserts_cards_content_price {
+    display: flex;
+    align-items: flex-end;
+    font-size: medium;
+    width: 7%;
+    padding: 10px;
+    font-weight: 900;
+    margin-left: -3%;
+  }
+  .menu_entrees_cards_content_price p, .menu_plats_cards_content_price p, .menu_desserts_cards_content_price p {
+    margin: 0;
+  }
+  .menu_entrees_cards_content_check, .menu_plats_cards_content_check, .menu_desserts_cards_content_check {
+    display: flex;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    margin-right: -50px;
+    background-color: #99e2d0;
+    border-left: 1px solid #008766;
+    border-radius: 0px 15px 15px 0px;
+    width: 55px;
+    transition: all 0.4s;
+  }
+  .menu_entrees_cards_content_check i, .menu_plats_cards_content_check i, .menu_desserts_cards_content_check i {
+    color: #99e2d0;
+    background-color: white;
+    border-radius: 32px;
+    padding: 5px;
+  }
+  .menu_entrees_cards_content:hover .menu_entrees_cards_content_check, .menu_entrees_cards_content:hover .menu_plats_cards_content_check, .menu_entrees_cards_content:hover .menu_desserts_cards_content_check, .menu_plats_cards_content:hover .menu_entrees_cards_content_check, .menu_plats_cards_content:hover .menu_plats_cards_content_check, .menu_plats_cards_content:hover .menu_desserts_cards_content_check, .menu_desserts_cards_content:hover .menu_entrees_cards_content_check, .menu_desserts_cards_content:hover .menu_plats_cards_content_check, .menu_desserts_cards_content:hover .menu_desserts_cards_content_check {
+    opacity: 1;
+    margin-right: 0;
+  }
+  .menu_entrees_cards_content:hover h3 + p, .menu_entrees_cards_content:hover h3, .menu_plats_cards_content:hover h3 + p, .menu_plats_cards_content:hover h3, .menu_desserts_cards_content:hover h3 + p, .menu_desserts_cards_content:hover h3 {
+    font-size: small;
+    width: 80%;
+    margin-left: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 }
-.menu_title {
-  font-family: "Shrikhand", cursive;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 28px;
-}
-.menu_entrees h2, .menu_plats h2, .menu_desserts h2 {
-  width: 40px;
-  border-bottom: 3px solid #99e2d0;
-}
-.menu_entrees_cards, .menu_plats_cards, .menu_desserts_cards {
-  display: flex;
-  border-radius: 15px;
-  margin-bottom: 12px;
-  background-color: #fff;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-}
-.menu_entrees_cards_content, .menu_plats_cards_content, .menu_desserts_cards_content {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.menu_entrees_cards_content_info, .menu_plats_cards_content_info, .menu_desserts_cards_content_info {
-  white-space: nowrap;
-  width: 100%;
-  padding: 10px;
-}
-.menu_entrees_cards_content_info h3, .menu_plats_cards_content_info h3, .menu_desserts_cards_content_info h3 {
-  margin: 0;
-  font-weight: 700;
-  font-size: 18px;
-}
-.menu_entrees_cards_content_info p, .menu_plats_cards_content_info p, .menu_desserts_cards_content_info p {
-  margin: 0;
-  font-size: 15px;
-}
-.menu_entrees_cards_content_price, .menu_plats_cards_content_price, .menu_desserts_cards_content_price {
-  display: flex;
-  align-items: flex-end;
-  width: 10%;
-  padding: 10px;
-  font-weight: 900;
-  margin-left: -3%;
-}
-.menu_entrees_cards_content_price p, .menu_plats_cards_content_price p, .menu_desserts_cards_content_price p {
-  margin: 0;
-}
-.menu_entrees_cards_content_check, .menu_plats_cards_content_check, .menu_desserts_cards_content_check {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  margin-right: -50px;
-  background-color: #99e2d0;
-  border-left: 1px solid #008766;
-  border-radius: 0px 15px 15px 0px;
-  width: 55px;
-  transition: all 0.5s;
-}
-.menu_entrees_cards_content_check i, .menu_plats_cards_content_check i, .menu_desserts_cards_content_check i {
-  color: #99e2d0;
-  background-color: white;
-  border-radius: 32px;
-  padding: 5px;
-}
-.menu_entrees_cards_content:hover .menu_entrees_cards_content_check, .menu_entrees_cards_content:hover .menu_plats_cards_content_check, .menu_entrees_cards_content:hover .menu_desserts_cards_content_check, .menu_plats_cards_content:hover .menu_entrees_cards_content_check, .menu_plats_cards_content:hover .menu_plats_cards_content_check, .menu_plats_cards_content:hover .menu_desserts_cards_content_check, .menu_desserts_cards_content:hover .menu_entrees_cards_content_check, .menu_desserts_cards_content:hover .menu_plats_cards_content_check, .menu_desserts_cards_content:hover .menu_desserts_cards_content_check {
-  opacity: 1;
-  margin-right: 0;
-}
-
 @media screen and (min-width: 767.1px) and (max-width: 1024px) {
   .retaurant_header_img {
     -o-object-fit: cover;
        object-fit: cover;
     height: 380px;
   }
+  .title {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  .title .heart-icon {
+    display: flex;
+    align-items: center;
+  }
   .menu {
     position: relative;
-    width: 90%;
+    width: 80%;
     margin: -50px auto 0 auto;
     z-index: 1;
     background-color: #F6F6F6;
@@ -666,7 +821,7 @@ body a {
   .menu_entrees_cards_content_price, .menu_plats_cards_content_price, .menu_desserts_cards_content_price {
     display: flex;
     align-items: flex-end;
-    width: 10%;
+    width: 2%;
     padding: 10px;
     font-weight: 900;
   }
@@ -694,6 +849,109 @@ body a {
   .menu_entrees_cards_content:hover .menu_entrees_cards_content_check, .menu_entrees_cards_content:hover .menu_plats_cards_content_check, .menu_entrees_cards_content:hover .menu_desserts_cards_content_check, .menu_plats_cards_content:hover .menu_entrees_cards_content_check, .menu_plats_cards_content:hover .menu_plats_cards_content_check, .menu_plats_cards_content:hover .menu_desserts_cards_content_check, .menu_desserts_cards_content:hover .menu_entrees_cards_content_check, .menu_desserts_cards_content:hover .menu_plats_cards_content_check, .menu_desserts_cards_content:hover .menu_desserts_cards_content_check {
     opacity: 1;
     margin-right: 0;
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .retaurant_header_img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 380px;
+  }
+  .title {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  .title .heart-icon {
+    display: flex;
+    align-items: center;
+  }
+  .menu {
+    position: relative;
+    width: 70%;
+    margin: -50px auto 0 auto;
+    z-index: 1;
+    background-color: #F6F6F6;
+    border-radius: 15px 15px 0 0;
+    padding: 3px 15px;
+  }
+  .menu_title {
+    text-align: center;
+    font-family: "Shrikhand", cursive;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 30px;
+  }
+  .menu_entrees h2, .menu_plats h2, .menu_desserts h2 {
+    margin-left: 25px;
+    width: 50px;
+    border-bottom: 3px solid #99e2d0;
+  }
+  .menu_entrees .title, .menu_plats .title, .menu_desserts .title {
+    display: flex;
+    justify-content: center;
+  }
+  .menu_entrees_cards, .menu_plats_cards, .menu_desserts_cards {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    border-radius: 15px;
+    margin-bottom: 12px;
+    background-color: #fff;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  }
+  .menu_entrees_cards_content, .menu_plats_cards_content, .menu_desserts_cards_content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .menu_entrees_cards_content_info, .menu_plats_cards_content_info, .menu_desserts_cards_content_info {
+    white-space: nowrap;
+    width: 100%;
+    padding: 10px;
+  }
+  .menu_entrees_cards_content_info h3, .menu_plats_cards_content_info h3, .menu_desserts_cards_content_info h3 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .menu_entrees_cards_content_info p, .menu_plats_cards_content_info p, .menu_desserts_cards_content_info p {
+    margin: 0;
+    font-size: 15px;
+  }
+  .menu_entrees_cards_content_price, .menu_plats_cards_content_price, .menu_desserts_cards_content_price {
+    display: flex;
+    align-items: flex-end;
+    width: 1%;
+    padding: 10px;
+    font-weight: 900;
+  }
+  .menu_entrees_cards_content_price p, .menu_plats_cards_content_price p, .menu_desserts_cards_content_price p {
+    margin: 0;
+  }
+  .menu_entrees_cards_content_check, .menu_plats_cards_content_check, .menu_desserts_cards_content_check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    margin-right: -30px;
+    background-color: #99e2d0;
+    border-left: 1px solid #008766;
+    border-radius: 0px 15px 15px 0px;
+    width: 55px;
+    transition: all 0.5s;
+  }
+  .menu_entrees_cards_content_check i, .menu_plats_cards_content_check i, .menu_desserts_cards_content_check i {
+    color: #99e2d0;
+    background-color: white;
+    border-radius: 32px;
+    padding: 5px;
+  }
+  .menu_entrees_cards_content:hover .menu_entrees_cards_content_check, .menu_entrees_cards_content:hover .menu_plats_cards_content_check, .menu_entrees_cards_content:hover .menu_desserts_cards_content_check, .menu_plats_cards_content:hover .menu_entrees_cards_content_check, .menu_plats_cards_content:hover .menu_plats_cards_content_check, .menu_plats_cards_content:hover .menu_desserts_cards_content_check, .menu_desserts_cards_content:hover .menu_entrees_cards_content_check, .menu_desserts_cards_content:hover .menu_plats_cards_content_check, .menu_desserts_cards_content:hover .menu_desserts_cards_content_check {
+    opacity: 1;
+    margin-right: 0;
+    margin-left: 15px;
   }
 }
 @keyframes full-heart {

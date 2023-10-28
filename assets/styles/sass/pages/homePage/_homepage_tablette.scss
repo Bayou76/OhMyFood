@@ -1,15 +1,19 @@
 @media screen and (min-width: 767.1px) and (max-width: 1024px) {
+
   // ETAPE FONCTIONNEMENT
 
   .step {
-    padding: 0 15px;
+    width: 90%;
+    margin: auto;
+    padding: 0 55px;
     &_title {
       font-weight: 900;
       font-size: 25px;
+      margin-left: 15px;
     }
     &_container {
       display: flex;
-      justify-content: center;
+      // justify-content: center;
     }
     .step_card {
       display: flex;
