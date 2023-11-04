@@ -57,6 +57,7 @@
     &_plats_cards,
     &_desserts_cards {
       display: flex;
+      width: 100%;
       border-radius: 15px;
       margin-bottom: 12px;
       background-color: $white;
@@ -99,15 +100,13 @@
 
         &_check {
           display: flex;
-          width: 30px;
           align-items: center;
           justify-content: center;
           opacity: 0;
-          margin-right: -50px;
           background-color: $tertiary;
           border-left: 1px solid $greenFont;
           border-radius: 0px 15px 15px 0px;
-          width: 55px;
+          width: 0;
           transition: all 0.4s;
         }
 
@@ -119,6 +118,7 @@
         }
 
         &:hover &_check {
+          width: 55px;
           opacity: 1;
           margin-right: 0;
           
@@ -126,12 +126,16 @@
         
         &:hover h3 + p,
         &:hover h3{
-          font-size: small;
-          width: 80%;
-          margin-left: 15px;
+          width: 90%;
+          margin-right: -25px;
           overflow: hidden;
           white-space: nowrap;
           text-overflow: ellipsis;
+        }
+
+        &:hover &_info{
+          margin-right: -15px;
+          padding-right: 0;
         }
       }
     }

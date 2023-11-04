@@ -1,21 +1,73 @@
 @media screen and (min-width: 1024px) {
   // ETAPE FONCTIONNEMENT
 
+  // .step {
+  //   padding: 50px 0px;
+  //   &_title {
+  //     font-weight: 900;
+  //     font-size: 25px;
+  //     margin-left: 15px;
+  //   }
+  //   &_container {
+  //     min-width: 1024px;
+  //     max-width: 1440px;
+  //     display: flex;
+  //     justify-content: space-between;
+  //   }
+  //   .step_card {
+  //     display: flex;
+  //     margin: 15px;
+  //     font-size: large;
+  //     &_number {
+  //       background-color: $primary;
+  //       width: 15px;
+  //       padding: 10px;
+  //       text-align: center;
+  //       clip-path: circle(40%);
+  //       color: $white;
+  //     }
+
+  //     &_content {
+  //       display: flex;
+  //       justify-content: center;
+  //       margin-left: -15px;
+  //       align-items: center;
+  //       padding: 2px 20px;
+  //       font-weight: bold;
+  //       font-size: smaller;
+  //       border-radius: 20px;
+  //       box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  //       width: 322px;
+  //     }
+  //     &_content i {
+  //       margin-right: 15px;
+  //       color: $iconGrey;
+  //       font-size: 20px;
+  //     }
+  //     &_content .iconPurple {
+  //       color: $primary;
+  //     }
+  //   }
+  // }
+
   .step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 50px 180px;
     &_title {
       font-weight: 900;
       font-size: 25px;
-      margin-left: 15px;
     }
     &_container {
       display: flex;
-      justify-content: space-between;
+      // justify-content: center;
     }
     .step_card {
       display: flex;
+      padding: 5px 0;
       margin: 15px;
-      font-size: large;
+      font-size: medium;
       &_number {
         background-color: $primary;
         width: 15px;
@@ -26,16 +78,15 @@
       }
 
       &_content {
+        width: 322px;
         display: flex;
-        justify-content: center;
         margin-left: -15px;
         align-items: center;
-        padding: 2px 20px;
+        padding: 2px 25px;
         font-weight: bold;
-        font-size: smaller;
+        font-size: 16px;
         border-radius: 20px;
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-        width: 322px;
       }
       &_content i {
         margin-right: 15px;

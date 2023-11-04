@@ -32,8 +32,8 @@ body a {
   width: 100%;
   height: 100%;
   background-color: #89c8fa;
-  animation: loader 3s forwards;
-  -webkit-animation: loader 3s forwards;
+  animation: loader 5s forwards;
+  -webkit-animation: loader 5s forwards;
 }
 .loader h1 {
   font-size: 50px;
@@ -41,8 +41,8 @@ body a {
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: loader 3s forwards;
-  -webkit-animation: loader 3s forwards;
+  animation: loader 5s forwards;
+  -webkit-animation: loader 5s forwards;
 }
 @keyframes loader {
   0% {
@@ -59,7 +59,7 @@ body a {
   border-radius: 50%;
   border: 10px solid;
   border-color: #9356dc #008766 #ff79da #003a68;
-  animation: spinner 1s linear infinite;
+  animation: spinner 2s linear infinite;
   -webkit-animation: spinner 1s linear forwards;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -402,8 +402,6 @@ body a {
 }
 @media screen and (min-width: 767.1px) and (max-width: 1024px) {
   .step {
-    width: 90%;
-    margin: auto;
     padding: 0 55px;
   }
   .step_title {
@@ -433,14 +431,14 @@ body a {
     display: flex;
     margin-left: -15px;
     align-items: center;
-    padding: 2px 20px;
+    padding: 2px 15px;
     font-weight: bold;
     font-size: smaller;
     border-radius: 20px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   }
   .step .step_card_content i {
-    margin-right: 15px;
+    margin: 0 15px;
     color: #7e7e7e;
     font-size: 20px;
   }
@@ -518,21 +516,23 @@ body a {
 }
 @media screen and (min-width: 1024px) {
   .step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 50px 180px;
   }
   .step_title {
     font-weight: 900;
     font-size: 25px;
-    margin-left: 15px;
   }
   .step_container {
     display: flex;
-    justify-content: space-between;
   }
   .step .step_card {
     display: flex;
+    padding: 5px 0;
     margin: 15px;
-    font-size: large;
+    font-size: medium;
   }
   .step .step_card_number {
     background-color: #9356dc;
@@ -544,16 +544,15 @@ body a {
     color: #fff;
   }
   .step .step_card_content {
+    width: 322px;
     display: flex;
-    justify-content: center;
     margin-left: -15px;
     align-items: center;
-    padding: 2px 20px;
+    padding: 2px 25px;
     font-weight: bold;
-    font-size: smaller;
+    font-size: 16px;
     border-radius: 20px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    width: 322px;
   }
   .step .step_card_content i {
     margin-right: 15px;
@@ -682,6 +681,7 @@ body a {
   }
   .menu_entrees_cards, .menu_plats_cards, .menu_desserts_cards {
     display: flex;
+    width: 100%;
     border-radius: 15px;
     margin-bottom: 12px;
     background-color: #fff;
@@ -720,15 +720,13 @@ body a {
   }
   .menu_entrees_cards_content_check, .menu_plats_cards_content_check, .menu_desserts_cards_content_check {
     display: flex;
-    width: 30px;
     align-items: center;
     justify-content: center;
     opacity: 0;
-    margin-right: -50px;
     background-color: #99e2d0;
     border-left: 1px solid #008766;
     border-radius: 0px 15px 15px 0px;
-    width: 55px;
+    width: 0;
     transition: all 0.4s;
   }
   .menu_entrees_cards_content_check i, .menu_plats_cards_content_check i, .menu_desserts_cards_content_check i {
@@ -738,16 +736,20 @@ body a {
     padding: 5px;
   }
   .menu_entrees_cards_content:hover .menu_entrees_cards_content_check, .menu_entrees_cards_content:hover .menu_plats_cards_content_check, .menu_entrees_cards_content:hover .menu_desserts_cards_content_check, .menu_plats_cards_content:hover .menu_entrees_cards_content_check, .menu_plats_cards_content:hover .menu_plats_cards_content_check, .menu_plats_cards_content:hover .menu_desserts_cards_content_check, .menu_desserts_cards_content:hover .menu_entrees_cards_content_check, .menu_desserts_cards_content:hover .menu_plats_cards_content_check, .menu_desserts_cards_content:hover .menu_desserts_cards_content_check {
+    width: 55px;
     opacity: 1;
     margin-right: 0;
   }
   .menu_entrees_cards_content:hover h3 + p, .menu_entrees_cards_content:hover h3, .menu_plats_cards_content:hover h3 + p, .menu_plats_cards_content:hover h3, .menu_desserts_cards_content:hover h3 + p, .menu_desserts_cards_content:hover h3 {
-    font-size: small;
-    width: 80%;
-    margin-left: 15px;
+    width: 90%;
+    margin-right: -25px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+  }
+  .menu_entrees_cards_content:hover .menu_entrees_cards_content_info, .menu_entrees_cards_content:hover .menu_plats_cards_content_info, .menu_entrees_cards_content:hover .menu_desserts_cards_content_info, .menu_plats_cards_content:hover .menu_entrees_cards_content_info, .menu_plats_cards_content:hover .menu_plats_cards_content_info, .menu_plats_cards_content:hover .menu_desserts_cards_content_info, .menu_desserts_cards_content:hover .menu_entrees_cards_content_info, .menu_desserts_cards_content:hover .menu_plats_cards_content_info, .menu_desserts_cards_content:hover .menu_desserts_cards_content_info {
+    margin-right: -15px;
+    padding-right: 0;
   }
 }
 @media screen and (min-width: 767.1px) and (max-width: 1024px) {
