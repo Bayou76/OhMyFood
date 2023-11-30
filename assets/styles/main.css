@@ -217,26 +217,6 @@ body a {
   opacity: 0.85;
 }
 
-@keyframes full-heart {
-  0% {
-    opacity: 0.5;
-  }
-  20% {
-    opacity: 0.6;
-  }
-  40% {
-    opacity: 0.7;
-  }
-  60% {
-    opacity: 0.8;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .heart-icon {
   font-size: 25px;
   margin-right: 35px;
@@ -293,116 +273,118 @@ body a {
   animation: fadeIn 3s ease-in-out 0.5s forwards;
 }
 
-@media screen and (max-width: 767px) {
-  .step {
-    width: 90%;
-    margin: auto;
-    padding: 0 15px;
-  }
-  .step_title {
-    font-weight: 900;
-    font-size: 25px;
-  }
-  .step .step_card {
-    display: flex;
-    padding: 10px 0;
-  }
-  .step .step_card_number {
-    background-color: #9356dc;
-    width: 15px;
-    padding: 10px;
-    text-align: center;
-    -webkit-clip-path: circle(40%);
-            clip-path: circle(40%);
-    color: #fff;
-  }
-  .step .step_card_content {
-    display: flex;
-    width: 100%;
-    margin-left: -15px;
-    align-items: center;
-    padding: 2px 25px;
-    font-weight: bold;
-    gap: 10px;
-    font-size: small;
-    border-radius: 20px;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  }
-  .step .step_card_content i {
-    margin-right: 15px;
-    color: #7e7e7e;
-    font-size: 20px;
-  }
-  .step .step_card_content .iconPurple {
-    color: #9356dc;
-  }
-  .restaurants {
-    background-color: #F6F6F6;
-  }
-  .restaurants_title {
-    padding: 15px 25px 0 25px;
-  }
-  .restaurants_card {
-    width: 90%;
-    margin: auto auto 25px auto;
-    position: relative;
-    z-index: 1;
-    height: auto;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-  }
-  .restaurants_card_img img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 15px 15px 0 0;
-    width: 100%;
-    height: 231px;
-    -webkit-border-radius: 15px 15px 0 0;
-    -moz-border-radius: 15px 15px 0 0;
-    -ms-border-radius: 15px 15px 0 0;
-    -o-border-radius: 15px 15px 0 0;
-  }
-  .restaurants_card_img_text {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    z-index: 2;
-    background-color: #99e2d0;
-    color: #008766;
-    font-size: 17px;
-    font-weight: 500;
-    padding: 7px 9px;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  }
-  .restaurants_card_content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .restaurants_card_content_text {
-    padding: 5px 5px;
-  }
-  .restaurants_card_content_title {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 0;
-  }
-  .restaurants_card_content_subtitle {
-    margin-top: 5px;
-  }
+.step {
+  width: 90%;
+  margin: auto;
+  padding: 0 15px;
 }
+.step_title {
+  font-weight: 900;
+  font-size: 25px;
+}
+.step .step_card {
+  display: flex;
+  padding: 10px 0;
+}
+.step .step_card_number {
+  background-color: #9356dc;
+  width: 15px;
+  padding: 10px;
+  text-align: center;
+  -webkit-clip-path: circle(40%);
+          clip-path: circle(40%);
+  color: #fff;
+}
+.step .step_card_content {
+  display: flex;
+  width: 100%;
+  margin-left: -15px;
+  align-items: center;
+  padding: 2px 25px;
+  font-weight: bold;
+  gap: 10px;
+  font-size: small;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.step .step_card_content i {
+  margin-right: 15px;
+  color: #7e7e7e;
+  font-size: 20px;
+}
+.step .step_card_content .iconPurple {
+  color: #9356dc;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+}
+.restaurants_title {
+  padding: 15px 25px 0 25px;
+}
+
+.restaurants_card {
+  width: 90%;
+  margin: auto auto 25px auto;
+  position: relative;
+  z-index: 1;
+  height: auto;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.restaurants_card_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 231px;
+  -webkit-border-radius: 15px 15px 0 0;
+  -moz-border-radius: 15px 15px 0 0;
+  -ms-border-radius: 15px 15px 0 0;
+  -o-border-radius: 15px 15px 0 0;
+}
+.restaurants_card_img_text {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 2;
+  background-color: #99e2d0;
+  color: #008766;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 7px 9px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.restaurants_card_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurants_card_content_text {
+  padding: 5px 5px;
+}
+.restaurants_card_content_title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.restaurants_card_content_subtitle {
+  margin-top: 5px;
+}
+
 @media screen and (min-width: 767.1px) and (max-width: 1024px) {
   .step {
-    padding: 0 55px;
+    width: 100%;
+    padding: 0;
   }
   .step_title {
     font-weight: 900;
@@ -519,14 +501,16 @@ body a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 50px 180px;
+    padding: 50px 0;
   }
   .step_title {
     font-weight: 900;
     font-size: 25px;
+    margin-left: 0;
   }
   .step_container {
     display: flex;
+    margin: auto;
   }
   .step .step_card {
     display: flex;
@@ -544,7 +528,7 @@ body a {
     color: #fff;
   }
   .step .step_card_content {
-    width: 322px;
+    width: 230px;
     display: flex;
     margin-left: -15px;
     align-items: center;
@@ -563,7 +547,7 @@ body a {
     color: #9356dc;
   }
   .restaurants {
-    padding: 50px 180px;
+    padding: 50px;
     background-color: #F6F6F6;
   }
   .restaurants_title {
@@ -647,111 +631,111 @@ body a {
   width: 100%;
 }
 
-@media screen and (max-width: 767.1px) {
-  .title {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-  .title .heart-icon {
-    display: flex;
-    align-items: center;
-  }
-  .menu {
-    position: relative;
-    z-index: 1;
-    margin-top: -50px;
-    background-color: #fff;
-    border-radius: 15px;
-    padding: 5px 10px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-  }
-  .menu_title {
-    font-family: "Shrikhand", cursive;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 28px;
-  }
-  .menu_entrees h2, .menu_plats h2, .menu_desserts h2 {
-    width: 40px;
-    border-bottom: 3px solid #99e2d0;
-  }
-  .menu_entrees_cards, .menu_plats_cards, .menu_desserts_cards {
-    display: flex;
-    width: 100%;
-    border-radius: 15px;
-    margin-bottom: 12px;
-    background-color: #fff;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-  }
-  .menu_entrees_cards_content, .menu_plats_cards_content, .menu_desserts_cards_content {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .menu_entrees_cards_content_info, .menu_plats_cards_content_info, .menu_desserts_cards_content_info {
-    white-space: nowrap;
-    width: 100%;
-    padding: 10px;
-  }
-  .menu_entrees_cards_content_info h3, .menu_plats_cards_content_info h3, .menu_desserts_cards_content_info h3 {
-    margin: 0;
-    font-weight: 700;
-    font-size: 18px;
-  }
-  .menu_entrees_cards_content_info p, .menu_plats_cards_content_info p, .menu_desserts_cards_content_info p {
-    margin: 0;
-    font-size: 15px;
-  }
-  .menu_entrees_cards_content_price, .menu_plats_cards_content_price, .menu_desserts_cards_content_price {
-    display: flex;
-    align-items: flex-end;
-    font-size: medium;
-    width: 7%;
-    padding: 10px;
-    font-weight: 900;
-    margin-left: -3%;
-  }
-  .menu_entrees_cards_content_price p, .menu_plats_cards_content_price p, .menu_desserts_cards_content_price p {
-    margin: 0;
-  }
-  .menu_entrees_cards_content_check, .menu_plats_cards_content_check, .menu_desserts_cards_content_check {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    background-color: #99e2d0;
-    border-left: 1px solid #008766;
-    border-radius: 0px 15px 15px 0px;
-    width: 0;
-    transition: all 0.4s;
-  }
-  .menu_entrees_cards_content_check i, .menu_plats_cards_content_check i, .menu_desserts_cards_content_check i {
-    color: #99e2d0;
-    background-color: white;
-    border-radius: 32px;
-    padding: 5px;
-  }
-  .menu_entrees_cards_content:hover .menu_entrees_cards_content_check, .menu_entrees_cards_content:hover .menu_plats_cards_content_check, .menu_entrees_cards_content:hover .menu_desserts_cards_content_check, .menu_plats_cards_content:hover .menu_entrees_cards_content_check, .menu_plats_cards_content:hover .menu_plats_cards_content_check, .menu_plats_cards_content:hover .menu_desserts_cards_content_check, .menu_desserts_cards_content:hover .menu_entrees_cards_content_check, .menu_desserts_cards_content:hover .menu_plats_cards_content_check, .menu_desserts_cards_content:hover .menu_desserts_cards_content_check {
-    width: 55px;
-    opacity: 1;
-    margin-right: 0;
-  }
-  .menu_entrees_cards_content:hover h3 + p, .menu_entrees_cards_content:hover h3, .menu_plats_cards_content:hover h3 + p, .menu_plats_cards_content:hover h3, .menu_desserts_cards_content:hover h3 + p, .menu_desserts_cards_content:hover h3 {
-    width: 90%;
-    margin-right: -25px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-  .menu_entrees_cards_content:hover .menu_entrees_cards_content_info, .menu_entrees_cards_content:hover .menu_plats_cards_content_info, .menu_entrees_cards_content:hover .menu_desserts_cards_content_info, .menu_plats_cards_content:hover .menu_entrees_cards_content_info, .menu_plats_cards_content:hover .menu_plats_cards_content_info, .menu_plats_cards_content:hover .menu_desserts_cards_content_info, .menu_desserts_cards_content:hover .menu_entrees_cards_content_info, .menu_desserts_cards_content:hover .menu_plats_cards_content_info, .menu_desserts_cards_content:hover .menu_desserts_cards_content_info {
-    margin-right: -15px;
-    padding-right: 0;
-  }
+.title {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
+.title .heart-icon {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  position: relative;
+  z-index: 1;
+  margin-top: -50px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 5px 10px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.menu_title {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 28px;
+}
+.menu_entrees h2, .menu_plats h2, .menu_desserts h2 {
+  width: 40px;
+  border-bottom: 3px solid #99e2d0;
+}
+.menu_entrees_cards, .menu_plats_cards, .menu_desserts_cards {
+  display: flex;
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 12px;
+  background-color: #fff;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.menu_entrees_cards_content, .menu_plats_cards_content, .menu_desserts_cards_content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.menu_entrees_cards_content_info, .menu_plats_cards_content_info, .menu_desserts_cards_content_info {
+  white-space: nowrap;
+  width: 100%;
+  padding: 10px;
+}
+.menu_entrees_cards_content_info h3, .menu_plats_cards_content_info h3, .menu_desserts_cards_content_info h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+}
+.menu_entrees_cards_content_info p, .menu_plats_cards_content_info p, .menu_desserts_cards_content_info p {
+  margin: 0;
+  font-size: 15px;
+}
+.menu_entrees_cards_content_price, .menu_plats_cards_content_price, .menu_desserts_cards_content_price {
+  display: flex;
+  align-items: flex-end;
+  font-size: medium;
+  width: 7%;
+  padding: 10px;
+  font-weight: 900;
+  margin-left: -3%;
+}
+.menu_entrees_cards_content_price p, .menu_plats_cards_content_price p, .menu_desserts_cards_content_price p {
+  margin: 0;
+}
+.menu_entrees_cards_content_check, .menu_plats_cards_content_check, .menu_desserts_cards_content_check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  background-color: #99e2d0;
+  border-left: 1px solid #008766;
+  border-radius: 0px 15px 15px 0px;
+  width: 0;
+  transition: all 0.4s;
+}
+.menu_entrees_cards_content_check i, .menu_plats_cards_content_check i, .menu_desserts_cards_content_check i {
+  color: #99e2d0;
+  background-color: white;
+  border-radius: 32px;
+  padding: 5px;
+}
+.menu_entrees_cards_content:hover .menu_entrees_cards_content_check, .menu_entrees_cards_content:hover .menu_plats_cards_content_check, .menu_entrees_cards_content:hover .menu_desserts_cards_content_check, .menu_plats_cards_content:hover .menu_entrees_cards_content_check, .menu_plats_cards_content:hover .menu_plats_cards_content_check, .menu_plats_cards_content:hover .menu_desserts_cards_content_check, .menu_desserts_cards_content:hover .menu_entrees_cards_content_check, .menu_desserts_cards_content:hover .menu_plats_cards_content_check, .menu_desserts_cards_content:hover .menu_desserts_cards_content_check {
+  width: 55px;
+  opacity: 1;
+  margin-right: 0;
+}
+.menu_entrees_cards_content:hover h3 + p, .menu_entrees_cards_content:hover h3, .menu_plats_cards_content:hover h3 + p, .menu_plats_cards_content:hover h3, .menu_desserts_cards_content:hover h3 + p, .menu_desserts_cards_content:hover h3 {
+  width: 90%;
+  margin-right: -25px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu_entrees_cards_content:hover .menu_entrees_cards_content_info, .menu_entrees_cards_content:hover .menu_plats_cards_content_info, .menu_entrees_cards_content:hover .menu_desserts_cards_content_info, .menu_plats_cards_content:hover .menu_entrees_cards_content_info, .menu_plats_cards_content:hover .menu_plats_cards_content_info, .menu_plats_cards_content:hover .menu_desserts_cards_content_info, .menu_desserts_cards_content:hover .menu_entrees_cards_content_info, .menu_desserts_cards_content:hover .menu_plats_cards_content_info, .menu_desserts_cards_content:hover .menu_desserts_cards_content_info {
+  margin-right: -15px;
+  padding-right: 0;
+}
+
 @media screen and (min-width: 767.1px) and (max-width: 1024px) {
   .retaurant_header_img {
     -o-object-fit: cover;
@@ -954,26 +938,6 @@ body a {
     opacity: 1;
     margin-right: 0;
     margin-left: 15px;
-  }
-}
-@keyframes full-heart {
-  0% {
-    opacity: 0.5;
-  }
-  20% {
-    opacity: 0.6;
-  }
-  40% {
-    opacity: 0.7;
-  }
-  60% {
-    opacity: 0.8;
-  }
-  80% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 1;
   }
 }
 @keyframes fadeIn {
